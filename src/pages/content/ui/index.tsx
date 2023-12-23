@@ -21,6 +21,9 @@ const styleElement = document.createElement('style');
 styleElement.innerHTML = injectedStyle;
 shadowRoot.appendChild(styleElement);
 
+// inject style into head
+document.head.appendChild(styleElement);
+
 /**
  * https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/pull/174
  *
